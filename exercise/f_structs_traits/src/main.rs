@@ -4,7 +4,9 @@
 // want to bite something.  Once this trait is defined, you should be able to run the program with
 // `cargo run` without any errors.
 //
-//  trait Bite...
+trait Bite {
+    fn bite(self: &mut Self);
+}
 
 
 // 2. Now create a struct named Grapes with a field that tracks how many grapes are left.  If you
@@ -12,7 +14,9 @@
 // use a different field, though).
 //
 // #[derive(Debug)] // include this line right before your struct definition
-// struct Grapes...
+struct Grapes {
+    :
+}
 
 
 // 3. Implement Bite for Grapes.  When you bite a Grapes, subtract 1 from how many grapes are left.
